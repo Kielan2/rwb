@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+@font-face {
+    font-family: 'SF Intellivised';
+    src: url('/fonts/intellivision/SF%20Intellivised%20Bold%20Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.montserrat-thin {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+  }
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-semi-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+	background: #F5F5F5;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'SF Intellivised', sans-serif;
+	color: #ff0008;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 5vw;
+}
+
+h2 {
+	font-size: 4vw;
+}
+
+h3 {
+	font-size: 3vw;
+}
+
+p, span {
+	font-family: "Montserrat", sans-serif;
+	color: #3e3e3e;
+	font-weight: 600;
+}
+
+.spacer {
+	height: 500px;
+	background-color: black;
+}
+
+header {
+	display: flex;
+}
+
+header .content {
+	padding: 50px;
+	max-width: 50vw;
+	min-width: 50vw;
+	align-content: flex-end;
+}
+
+header p {
+	padding: 25px;
+}
+
+header .rwb-logo {
+	filter: brightness(0) saturate(100%) invert(13%) sepia(82%) saturate(7055%) hue-rotate(350deg) brightness(98%) contrast(127%);
+	max-width: 50vw;
+	margin-bottom: 1rem;
+}
+
+.hero-img {
+	min-height: 100vh;
+	display: flex;
+	justify-content: right;
+	position: relative;
+	bottom: 0;
+}
+
+.hero-img div:first-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.hero-img .second-section img {
+	min-height: 100%;
+}
+
+
+.hero-img img {
+	max-width: 25vw;
+	object-fit: cover;
+}
+
+.hero-img img.pic-2 {
+	max-width: 30vw;
+}
