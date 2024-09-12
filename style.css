@@ -203,10 +203,10 @@ section {
 
 :root {
     --gutter: 40px;
-    --image-width: 60vw;
+    --image-width: 50vw;
     --image-height: calc(100vh - 160px);
     --image-max-height: 70vh;
-    --section-count: 5;
+    --section-count:11;
 }
 
 
@@ -224,6 +224,7 @@ section {
     justify-content: center;
     align-items: center;
 	position: relative;
+	background: radial-gradient(circle, black 1%, rgb(245, 245, 245));
 }
 
 .image {
@@ -232,6 +233,8 @@ section {
     max-height: var(--image-max-height);
     background-size: cover;
     background-position: center;
+	max-width: 50vw;
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, .25);
     /* position: relative; */
     /* cursor: pointer; */
 }
@@ -241,25 +244,51 @@ section {
 }
 
 .image-2 .image {
-    background-image: url(/images/rwb-1.jpg);
+    background-image: url(/images/rauh-welt-begriff-jezebel.avif);
 }
 
 .image-3 .image {
-    background-image: url(/images/rwb-2.jpg);
+    background-image: url(/images/RWB-Porsche-930-Shinkiro-Cropped.avif);
 }
 
 .image-4 .image {
-    background-image: url(/images/rwb-6.jpg);
+    background-image: url(/images/Rauh-Welt-Begriff-Rotana.avif);
 }
 
 .image-5 .image {
-    background-image: url(/images/rwb-7.png);
+    background-image: url(/images/RWB-Baymax-1.avif);
+}
+
+.image-6 .image {
+    background-image: url(/images/RWB-Natty-Dread-1.avif);
+}
+
+.image-7 .image {
+    background-image: url(/images/1989-Martini-RWB-Porsche-Cropped.avif);
+}
+
+.image-8 .image {
+    background-image: url(/images/RWB-Maverick-C4.avif);
+}
+
+.image-9 .image {
+    background-image: url(/images/RAUH-Welt-Spearmint-Rhino.avif);
+}
+
+.image-10 .image {
+    background-image: url(/images/RWB-Porsche-930-Stella-Artois-Cropped-1.avif);
+}
+
+.image-11 .image {
+    background-image: url(/images/Rauh-Passion.avif);
+
 }
 
  .text-container {
 	font-family: 'SF Intellivised', sans-serif;
 	color: #ff0008;
 	margin-left: 2vw;
+	max-width: 30vw;
 }
 
 .title-item {
@@ -267,7 +296,7 @@ section {
 	letter-spacing: 3px;
     transition: 0.5s ease-in-out;
 	color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #ff0008;
 	margin-bottom: 1rem;
 }
@@ -275,15 +304,20 @@ section {
 .number-item {
     transition: 0.5s ease-in-out;
 	font-size: 3vw;
-	position: relative;
-	top: 0;
+	position: absolute;
+	left: 10vw;
+	top: 85vh;
 	margin-bottom: 1rem;
 }
 
-.canyon-item {
+.car-item {
     transition: 0.5s ease-in-out;
 	font-size: 1vw;
 	font-family: "Montserrat", sans-serif;
 	color: #3e3e3e !important;
 	font-weight: 600;
+	background: rgba(245, 245, 245, .5);
+	border: 1px solid rgba(245, 245, 245, .15);
+	padding: 15px;
+	box-shadow: 0 0 10px 2px rgba(255, 255, 255, .25);
 }

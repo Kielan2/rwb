@@ -91,7 +91,7 @@ let standForText = document.querySelector('.stand-for .content h2');
 gsap.to(standForText, {
   scrollTrigger: {
     trigger: ".stand-for",
-    start: "top 10%", 
+    start: "top center", 
     onEnter: () => {
       gsap.to(standForText, {
         duration: 1,
@@ -138,7 +138,7 @@ tl.fromTo(history,
 let gallery = gsap.utils.toArray(".image-container");
 
 let numbers = gsap.utils.toArray(".number-item");
-let canyons = gsap.utils.toArray(".canyon-item");
+let cars = gsap.utils.toArray(".car-item");
 let titles = gsap.utils.toArray(".title-item");
 console.log(gallery)
 console.log(numbers)
@@ -176,7 +176,7 @@ function hideItem(index) {
   // add class to new sections
   numbers[index].classList.remove("active");
   titles[index].classList.remove("active");
-  canyons[index].classList.remove("active");
+  cars[index].classList.remove("active");
 }
 
 function showItem(index) {
@@ -185,7 +185,7 @@ function showItem(index) {
   // add class to new sections
   numbers[index].classList.add("active");
   titles[index].classList.add("active");
-  canyons[index].classList.add("active");
+  cars[index].classList.add("active");
 }
 
 
